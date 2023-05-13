@@ -98,7 +98,7 @@ void setup() {
 
   Serial.begin(115200);
   delay(500);
-  myservo.attach(ServoPort); //--> attaches the servo on D1 to the servo object
+  myservo.attach(ServoPort, 500, 2500)); //--> attaches the servo on D1 to the servo object
   pinMode(LED1, OUTPUT);
   Serial.print("Configuring access point...");
   /* You can remove the password parameter if you want the AP to be open. */
